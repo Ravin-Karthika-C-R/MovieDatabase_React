@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Col, ListGroup, Row } from "react-bootstrap";
+import { Button, Col, ListGroup, Row } from "react-bootstrap";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function SingleView() {
   const [movie, setMovie] = useState({});
@@ -59,6 +59,10 @@ function SingleView() {
               <span style={{ color: "#F94C10" }}>Ratings</span>: {movie.Ratings?.[0]?.Value || "N/A"}
             </ListGroup.Item>
           </ListGroup>
+          <Link to={'/'}>
+          <Button className="btn btn-secondary mt-3 ">Go Back</Button>
+
+          </Link>
         </Col>
       </Row>
     </div>
