@@ -1,0 +1,14 @@
+#inputBox{
+    background-color: rgba(215, 215, 215, 0.071);
+  }
+  #inputBox::placeholder {
+    color: white;
+  }
+  .card{
+    background-color: rgba(195, 213, 254, 0.282)
+  }
+  .cardTitle{
+    font-family:'Anton';
+   
+    color: aliceblue;
+  }
